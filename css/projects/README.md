@@ -1,0 +1,13 @@
+# 项目中用到的代码块
+
+[使文本在一行显示...](#使文本在一行显示，超出父元素隐藏，并且加...)
+
+## 使文本在一行显示，超出父元素隐藏，并且加...
+
+```css
+.element {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+```
