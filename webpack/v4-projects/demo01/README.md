@@ -1,7 +1,7 @@
 ## 如何开始
 
 1. `yarn init -y`
-2. `yarn add webpack webpack-cli`
+2. `yarn add webpack webpack-cli webpack-dev-server`
 3. 配置`package.json`文件
 4. 新增其他文件
 5. 配置`webpack.config.js`
