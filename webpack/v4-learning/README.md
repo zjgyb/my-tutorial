@@ -25,3 +25,11 @@
 > 从打包优化和压缩，一直到重新定义环境中的变量。
 
 其实就是各式各样的包，能够优化打包出来的文件，贯穿打包整个过程。
+
+## 其他重要概念
+
+### Optimization
+
+> Since version 4 webpack runs optimizations for you depending on the chosen `mode`, still all optimizations are available for manual configuration and overrides.
+
+大意就是到了webpack第四版能够根据所选的`mode`环境进行优化

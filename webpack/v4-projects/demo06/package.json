@@ -1,0 +1,15 @@
+{
+  "name": "demo01",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --hot",
+    "build": "webpack --colors -p --mode=production && cp index.html dist/index.html"
+  },
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  }
+}

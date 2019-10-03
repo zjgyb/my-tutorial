@@ -17,3 +17,5 @@
 + [plugins-vue打包](./demo03/webpack.config.js)
 + [module-引入CSS](./demo04/webpack.config.js)
 + [module-引入图片](./demo05/webpack.config.js)
++ [optimization-代码压缩](./demo06/webpack.config.js)
++ [plugins-自动生成html文件](./demo07/webpack.config.js)
