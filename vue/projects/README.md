@@ -45,7 +45,55 @@
 </script>
 ```
 
-### 子传父$emit
+### ref
+
+父元素变动告知子元素
+
+```html
+<!-- parent.vue -->
+<template>
+  <div class="parent">
+    <child-com ref="child" />
+    <button @click="add">Add</button>
+  </div>
+</template>
+
+<script>
+  import ChildCom from "./child";
+
+  export default {
+    components: {
+      ChildCom
+    },
+    methods: {
+      add() {
+        this.$refs.child.refresh();
+      }
+    }
+  };
+</script>
+```
+
+```html
+<!-- child -->
+<template>
+  <div>
+    <p>hello world!!!</p>
+  </div>
+</template>
+
+<script>
+  export default {
+    methods: {
+      refresh() {
+        console.log(2019);
+      }
+    }
+  };
+</script>
+```
+
+### 子传父\$emit
 
 1. 普通传递
 
@@ -141,13 +189,13 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    hidden() {
-      this.$emit('input', false);
+  export default {
+    methods: {
+      hidden() {
+        this.$emit("input", false);
+      }
     }
-  },
-}
+  };
 </script>
 ```
 
@@ -157,29 +205,33 @@ export default {
 <!-- parent -->
 <template>
   <div>
-    <child-com :id="id" :name="name" :class="{ 'child-class': true }" :style="{ color: 'red' }" @msg="msg" />
+    <child-com
+      :id="id"
+      :name="name"
+      :class="{ 'child-class': true }"
+      :style="{ color: 'red' }"
+      @msg="msg"
+    />
   </div>
 </template>
 
 <script>
-import ChildCom from './child';
+  import ChildCom from "./child";
 
-export default {
-  components: {
-    ChildCom
-  },
-  data() {
-    return {
-      id: 'id',
-      name: 'name'
+  export default {
+    components: {
+      ChildCom
+    },
+    data() {
+      return {
+        id: "id",
+        name: "name"
+      };
+    },
+    methods: {
+      msg() {}
     }
-  },
-  methods: {
-    msg() {
-
-    }
-  },
-}
+  };
 </script>
 ```
 
@@ -192,20 +244,19 @@ export default {
 </template>
 
 <script>
-export default {
-  props: {
-    id: String
-  },
-  created() {
-    console.log(this.$attrs); // { name: "name" }
-    console.log(this.$listeners.msg); // msg函数
-  },
-  methods: {
-    hidden() {
-      this.$emit('input', false);
+  export default {
+    props: {
+      id: String
+    },
+    created() {
+      console.log(this.$attrs); // { name: "name" }
+      console.log(this.$listeners.msg); // msg函数
+    },
+    methods: {
+      hidden() {
+        this.$emit("input", false);
+      }
     }
-  },
-}
+  };
 </script>
-
 ```

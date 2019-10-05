@@ -20,6 +20,8 @@
 
 > 让webpack能够处理那些非JavaScript文件(webpack自身只理解JavaScript)。loader可以将所有类型的文件转换为webpack能够处理的有效模块。
 
+在`webpack.config.js`中以`module`键值表示
+
 ### plugins
 
 > 从打包优化和压缩，一直到重新定义环境中的变量。

@@ -19,3 +19,7 @@
 + [module-引入图片](./demo05/webpack.config.js)
 + [optimization-代码压缩](./demo06/webpack.config.js)
 + [plugins-自动生成html文件](./demo07/webpack.config.js)
++ [plugins-设置不同模式全局变量](./demo08/webpack.config.js)
++ [module-babel转换](./demo09/webpack.config.js)
++ [import异步&按需加载](./demo10/webpack.config.js)
++ [module-异步&按需加载](./demo11/webpack.config.js)
