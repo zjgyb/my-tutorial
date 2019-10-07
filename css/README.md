@@ -32,3 +32,11 @@
 行内样式(内嵌样式)——`<div style="color: red;"></div>`
 内部样式(内联样式)——`<style>...</style>`
 外部样式(外联样式)——`<link rel="stylesheet" href="./index.css" />`
+
+## `::`与`:`
+
+`::`在CSS3规范中使伪元素和伪类区别开，因为之前都是`:`，注意IE兼容问题
+
+### 伪元素
+
+`before`、`after`、`first-line`(第一行)、`first-letter`(每段开头第一个字母)、`::selection`

@@ -80,3 +80,36 @@ ptr createlinked_B() {
   return(head);
 }
 ```
+
+## 链表种类
+
+### 单向链表
+
+> 结点只含一个链域，通常指向后继结点
+
+### 加头链表
+
+> 设计带监督元的链表，为了更方便地对链表进行操作
+`head = new snode; head->next=NULL`
+
+### 加尾链表
+`head = last = new snode; last->next=NULL`
+
+### 单向循环链表
+
+尾部指向头部
+
+### 单向加头循环链表
+
+加头+单向循环
+
+### 双向简单链表
+
+一个指向前驱，一个指向后驱
+插入p的左边：`q->Rlink=p; q->Llink=p->Llink; p->Llink=q; q->Llink->Rlink=q;`
+插入p的右侧：`q->Llink=p; q->Rlink=p->Rlink; p->Rlink=q; q->Rlink->Llink=q;`
+删除p所指的结点：`p->RLink->Llink=p->Llink; p->Llink->Rlink=p->Rlink;free(p)`
+
+### 双向加头循环链表
+
+双向简单+头尾双向
