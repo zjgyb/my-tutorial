@@ -22,6 +22,8 @@
 
 在`webpack.config.js`中以`module`键值表示
 
+[loader相关](https://webpack.js.org/loaders/)
+
 ### plugins
 
 > 从打包优化和压缩，一直到重新定义环境中的变量。
@@ -35,3 +37,23 @@
 > Since version 4 webpack runs optimizations for you depending on the chosen `mode`, still all optimizations are available for manual configuration and overrides.
 
 大意就是到了webpack第四版能够根据所选的`mode`环境进行优化
+
+### mode
+
+三个可选环境：`none`、`development`、`production`
+
+### resolve
+
+### devServer
+
+可以配置调试的端口、热更新等等
+
+### watch
+
+### Externals
+
+### performance
+
+### node
+
+与`nodejs`相关

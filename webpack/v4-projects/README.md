@@ -5,6 +5,7 @@
 + `webpack --watch`——自动监控文件的改变
 + `webpack -d`提供SourceMaps，方便调试
 + `webpack --colors`输出结果彩色显示
++ `webpack --config file.name`指定配置文件
 
 ## 需要了解的配置
 
@@ -24,3 +25,4 @@
 + [import异步&按需加载](./demo10/webpack.config.js)
 + [module-异步&按需加载](./demo11/webpack.config.js)
 + [optimization-代码分割](./demo12/webpack.config.js)
++ [devServer](./demo13/webpack.config.js)
