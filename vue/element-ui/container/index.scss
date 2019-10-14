@@ -1,0 +1,31 @@
+// 侧边栏
+.my-aside {
+  overflow: auto;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.my-container {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+  min-width: 0;
+
+  &.is-vertical {
+    flex-direction: column;
+  }
+}
+
+.my-header,
+.my-footer {
+  padding: 0 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.my-main {
+  flex: 1;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 20px;
+}

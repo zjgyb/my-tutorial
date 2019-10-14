@@ -29,9 +29,9 @@
 
 ## CSS样式种类
 
-行内样式(内嵌样式)——`<div style="color: red;"></div>`
-内部样式(内联样式)——`<style>...</style>`
-外部样式(外联样式)——`<link rel="stylesheet" href="./index.css" />`
+- 行内样式(内嵌样式)——`<div style="color: red;"></div>`
+- 内部样式(内联样式)——`<style>...</style>`
+- 外部样式(外联样式)——`<link rel="stylesheet" href="./index.css" />`
 
 ## `::`与`:`
 
@@ -40,3 +40,13 @@
 ### 伪元素
 
 `before`、`after`、`first-line`(第一行)、`first-letter`(每段开头第一个字母)、`::selection`
+
+## 媒体查询
+
+`@media`后可以指定特定屏幕的显示，有三个可选值`not`、`only`、`all`，其中写`all`的时候可以忽略
+
+```css
+@media only screen and (max-width: 767px) {}
+```
+
+## relative用法
