@@ -7,7 +7,7 @@
     display: table;
     content: "";
   }
-
+  // 清除浮动
   &::after {
     clear: both;
   }
