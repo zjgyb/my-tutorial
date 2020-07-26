@@ -5,11 +5,18 @@
 + `webpack --watch`——自动监控文件的改变
 + `webpack -d`提供SourceMaps，方便调试
 + `webpack --colors`输出结果彩色显示
-+ `webpack --config file.name`指定配置文件
++ `webpack --config filename`指定配置文件
+
++ `npm run build -- --config filename`使用npm命令指定配置文件
++ `yarn run build --config filename`使用yarn命令指定配置文件
 
 ## 需要了解的配置
 
 - [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
+
+## 其他介绍
+
+webpack是0配置的，所以可以直接用`npx webpack`来实现打包，打包过程会寻找`index.js`，然后打包出的文件放到`dist`文件夹下，默认的打包出的文件名是`main.js`，如果想要更好的配置，那么就在根目录创建`webpack.config.js`进行配置
 
 ## 文件介绍
 

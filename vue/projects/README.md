@@ -260,3 +260,17 @@
   };
 </script>
 ```
+
+## 清除 console.log
+
+```js
+// vue.config.js
+module.exports = {
+  // 关闭生产环境console
+  configureWebpack(config) {
+    if (process.env.NODE_ENV === "production") {
+      config.optimization.minimizer[0].options.terserOptions.compress.drop_console = true;
+    }
+  }
+};
+```

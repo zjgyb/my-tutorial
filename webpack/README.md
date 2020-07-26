@@ -4,7 +4,7 @@
 
 1. 根据[官网](https://www.webpackjs.com/concepts/)的例子把代码敲一遍
 2. 学习[阮一峰大大](https://github.com/ruanyf/webpack-demos)的webpack例子
-3. 看相关的博文
+3. 看相关的博文和视频
 
 ## 学习目标
 
@@ -14,5 +14,5 @@
 
 ## 学习内容
 
-[官网内容总结](./v4-learning/README.md)
+[webpack概念](./v4-learning/README.md)
 [阮一峰大大例子](./v4-projects/README.md)
