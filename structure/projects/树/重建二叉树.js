@@ -7,6 +7,7 @@
  * @param {number[]} preorder 前序遍历
  * @param {number[]} inorder 中序遍历
  * @return {TreeNode}
+ * 该理念就是一个节点要么是前一个节点的左子树，要么是前一个节点的右子树或者前一个节点祖先的右子树
  */
 var buildTree = function (preorder, inorder) {
  if (preorder.length === 0) {
@@ -16,14 +17,14 @@ var buildTree = function (preorder, inorder) {
   let node = new TreeNode(preorder[0]);
   let s = [];
   let cur = node;
-  for (let i = 1, j=0, len=preorder.length; i < len; i++) {
+  for (let i=1, j=0, len=preorder.length; i<len; i++) {
     if (cur.val !== inorder[j]) {
       cur.left = new TreeNode(preorder[i]);
       s.push(cur);
       cur = cur.left;
     } else {
       j++;
-      while(s.length && s[s.length - 1].val === inorder[j]) {
+      while(s.length && s[s.length-1].val === inorder[j]) {
         cur = s.pop();
         j++;
       }
